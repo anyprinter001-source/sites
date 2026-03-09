@@ -3,106 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saira García | Diseño con propósito</title>
-    <meta name="description" content="Diseñadora y emprendedora digital. Transformo ideas en experiencias humanas, funcionales y profundamente significativas.">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Saira García | Diseño UX y Emprendimiento Digital</title>
+    <meta name="description" content="Diseño con alma para productos con propósito. Soy Saira García, diseñadora UX y emprendedora digital.">
+    <meta property="og:title" content="Saira García | Diseño UX">
+    <meta property="og:description" content="Transformo ideas abstractas en experiencias coherentes.">
+    <meta property="og:type" content="website">
     <style>
         :root {
-            --primary-color: #F5F0EA;
-            --accent-color: #C97055;
-            --bg-color: #FAF7F3;
-            --text-color: #2D2926;
-            --font-main: 'Plus Jakarta Sans', sans-serif;
+            --primary-color: #E3D5CA;
+            --accent-color: #D5896F;
+            --bg-color: #FDFBF7;
+            --text-color: #2C2A29;
+            --font-main: 'system-ui', -apple-system, sans-serif;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { 
-            font-family: var(--font-main); 
-            background-color: var(--bg-color); 
+        body {
+            font-family: var(--font-main);
+            background-color: var(--bg-color);
             color: var(--text-color);
             line-height: 1.6;
-            padding: 0 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
         }
 
-        header { max-width: 1000px; margin: 40px auto; display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-weight: 600; font-size: 1.5rem; }
-
-        section { max-width: 800px; margin: 80px auto; }
+        header { padding: 4rem 0; text-align: center; }
+        h1 { font-size: 2.5rem; margin-bottom: 1rem; color: var(--text-color); }
+        .hero p { font-size: 1.2rem; color: #555; max-width: 600px; margin: 0 auto 2rem; }
         
-        .hero { text-align: center; padding: 60px 0; }
-        h1 { font-size: 3rem; margin-bottom: 20px; line-height: 1.2; }
-        .subheadline { font-size: 1.2rem; color: #555; margin-bottom: 30px; }
-        .cta-btn { 
-            background: var(--accent-color); color: white; padding: 12px 30px; 
-            text-decoration: none; border-radius: 50px; font-weight: 600; 
-        }
-
-        .about p { margin-bottom: 20px; font-size: 1.1rem; }
+        section { padding: 3rem 0; }
+        h2 { font-size: 1.8rem; margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 1px; color: var(--accent-color); }
         
-        .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
-        .project-card { 
-            background: var(--primary-color); padding: 30px; border-radius: 10px; 
-            border: 1px solid #e8e2dc;
-        }
-        .project-card h3 { margin-bottom: 10px; color: var(--accent-color); }
-        .highlight { font-size: 0.9rem; font-style: italic; margin-top: 10px; display: block; }
+        .about-text p { margin-bottom: 1.5rem; }
 
-        footer { text-align: center; padding: 40px; border-top: 1px solid #ddd; margin-top: 80px; }
-        .social-links a { margin: 0 10px; color: var(--text-color); text-decoration: none; }
+        .project-grid { display: grid; gap: 2rem; }
+        .project-card { border-left: 3px solid var(--accent-color); padding-left: 1.5rem; }
+        .project-card h3 { font-size: 1.4rem; }
+        .project-card .tag { font-size: 0.8rem; font-weight: bold; color: var(--accent-color); display: block; margin-top: 0.5rem; }
 
-        @media (max-width: 600px) { h1 { font-size: 2rem; } }
+        footer { text-align: center; padding-top: 4rem; border-top: 1px solid var(--primary-color); margin-top: 2rem; }
+        .social-links a { margin: 0 10px; color: var(--text-color); text-decoration: none; font-weight: bold; }
+        
+        .cta { background: var(--accent-color); color: white; padding: 0.8rem 2rem; text-decoration: none; border-radius: 4px; display: inline-block; }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="logo">Saira García</div>
+    <header class="hero">
+        <h1>Diseño con alma para productos con propósito.</h1>
+        <p>Soy Saira García, diseñadora UX y emprendedora digital. Transformo ideas abstractas en experiencias coherentes que conectan, inspiran y perduran.</p>
+        <a href="#proyectos" class="cta">Explora mi trabajo</a>
     </header>
 
     <main>
-        <section class="hero">
-            <h1>Diseño con propósito para marcas que conectan.</h1>
-            <p class="subheadline">Soy Saira García, diseñadora y emprendedora digital. Transformo ideas en experiencias humanas, funcionales y profundamente significativas.</p>
-            <a href="mailto:hola@sairagarcia.com" class="cta-btn">Hablemos de tu proyecto</a>
-        </section>
-
-        <section class="about">
+        <section id="sobre-mi">
             <h2>Sobre mí</h2>
-            <br>
-            <p>Creo en un diseño que no solo se ve bien, sino que se siente bien. Mi trabajo nace en la intersección de la estrategia UX y un branding consciente, donde cada píxel tiene la intención de acercar a las personas a lo que realmente les importa.</p>
-            <p>A lo largo de mi trayectoria, he aprendido que los productos digitales más exitosos son aquellos que logran humanizar la tecnología. Me especializo en construir soluciones que equilibran la funcionalidad técnica con una narrativa visual clara, cálida y editorial.</p>
+            <div class="about-text">
+                <p>Creo en el diseño como un puente entre la intención y la experiencia. Mi trabajo fusiona la estrategia de branding con la precisión del diseño UX, asegurando que cada producto que nace en mi estudio no sea solo una pieza estética, sino una herramienta funcional que aporta valor real.</p>
+                <p>Mi trayectoria se ha definido por la curiosidad y la construcción. Desde la gestión de proyectos digitales independientes hasta el tejido de comunidades online, me dedico a convertir visiones complejas en ecosistemas digitales humanos, organizados y con un propósito claro.</p>
+            </div>
         </section>
 
-        <section class="projects">
+        <section id="proyectos">
             <h2>Proyectos</h2>
-            <br>
-            <div class="projects-grid">
+            <div class="project-grid">
                 <div class="project-card">
                     <h3>JournalBord</h3>
-                    <p>Plataforma innovadora de marca personal entregada directamente vía Telegram.</p>
-                    <span class="highlight">Reimaginando la presencia digital en tiempo real.</span>
+                    <p>Plataforma de marca personal vía Telegram.</p>
+                    <span class="tag">Reflexión digital íntima.</span>
                 </div>
                 <div class="project-card">
                     <h3>Amapola Studio</h3>
-                    <p>Estudio de diseño digital independiente enfocado en marcas con alma.</p>
-                    <span class="highlight">Artesanía digital con un enfoque estético y estratégico.</span>
+                    <p>Estudio de diseño digital independiente.</p>
+                    <span class="tag">Identidad y funcionalidad.</span>
                 </div>
                 <div class="project-card">
                     <h3>Comunidad Creativa</h3>
-                    <p>Newsletter semanal que explora la intersección entre la creatividad y la tecnología.</p>
-                    <span class="highlight">Curaduría pensada para mentes inquietas.</span>
+                    <p>Newsletter semanal sobre creatividad y tecnología.</p>
+                    <span class="tag">Curaduría de pensamiento.</span>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>Diseño con alma para el entorno digital.</p>
-        <div class="social-links" style="margin-top: 20px;">
+        <p>Creando el futuro digital, un detalle a la vez.</p>
+        <div class="social-links" style="margin-top: 1.5rem;">
             <a href="https://linkedin.com/in/sairagarcia">LinkedIn</a>
             <a href="https://instagram.com/sairagarcia">Instagram</a>
             <a href="https://twitter.com/sairagarcia">Twitter</a>
         </div>
+        <p style="margin-top: 2rem; font-size: 0.8rem;">Contacto: asuasaira@gmail.com</p>
     </footer>
 
 </body>
