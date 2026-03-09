@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annie Scigliano | Ingeniería Biomédica e Innovación</title>
+    <meta name="description" content="Annie Scigliano: Codificando el futuro en la intersección de la biología y la tecnología.">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2563EB;
+            --accent-color: #06B6D4;
+            --background-color: #F8FAFC;
+            --text-color: #1E293B;
+            --font-heading: 'Plus Jakarta Sans', sans-serif;
+            --font-body: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: var(--font-body); 
+            background-color: var(--background-color); 
+            color: var(--text-color); 
+            line-height: 1.6;
+        }
+
+        header { padding: 2rem 5%; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-weight: 800; font-size: 1.5rem; color: var(--primary-color); }
+        
+        section { padding: 4rem 5%; max-width: 1100px; margin: auto; }
+        
+        .hero { text-align: center; padding-top: 6rem; }
+        h1 { font-family: var(--font-heading); font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 1.5rem; line-height: 1.1; }
+        .hero p { font-size: 1.25rem; margin-bottom: 2rem; color: #64748b; }
+        .cta-btn { background: var(--primary-color); color: white; padding: 0.8rem 2rem; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-block; transition: background 0.3s; }
+        .cta-btn:hover { background: var(--accent-color); }
+
+        .about p { margin-bottom: 1.5rem; font-size: 1.1rem; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem; }
+        .card { background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); border-top: 4px solid var(--accent-color); }
+        .card h3 { color: var(--primary-color); margin-bottom: 1rem; }
+
+        footer { text-align: center; padding: 4rem 5%; border-top: 1px solid #e2e8f0; }
+        .social-links a { margin: 0 1rem; text-decoration: none; color: var(--text-color); font-weight: 600; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Annie Scigliano</div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Codificando el futuro en la intersección de la biología y la tecnología.</h1>
+            <p>Ingeniera Biomédica en formación, apasionada por la investigación neurocientífica y el desarrollo de tecnologías que conectan comunidades.</p>
+            <a href="#projects" class="cta-btn">Conoce mi trabajo</a>
+        </section>
+
+        <section id="about" class="about">
+            <h2>Sobre Mí</h2>
+            <p>Soy estudiante de Ingeniería Biomédica en la Universidad Nacional de Córdoba, un espacio donde transformo mi curiosidad científica en herramientas con impacto real. Mi enfoque combina el rigor técnico de la ingeniería con una visión humanista.</p>
+            <p>Actualmente, mi labor en la Asociación Civil AlterMundi es mi campo de pruebas favorito. Colaboro en proyectos multidisciplinarios: desde el despliegue de redes comunitarias y tecnología apropiada, hasta la fascinante investigación aplicada con dispositivos EEG.</p>
+            <p><strong><em>Diseñando soluciones donde la ciencia se encuentra con el impacto social.</em></strong></p>
+        </section>
+
+        <section id="projects">
+            <h2>Proyectos</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Harmonic Beacon</h3>
+                    <p>Desarrollo de dispositivos especializados en sistemas de seguimiento y señalización inteligente.</p>
+                    <p><strong>Enfoque:</strong> Ingeniería de precisión aplicada a la localización.</p>
+                </div>
+                <div class="card">
+                    <h3>LibrePollo</h3>
+                    <p>Iniciativa de código abierto orientada a fortalecer el desarrollo comunitario mediante herramientas digitales.</p>
+                    <p><strong>Enfoque:</strong> Democratización tecnológica y colaboración abierta.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <p>Conecta conmigo:</p>
+            <br>
+            <a href="#">X: @anyscigliano</a>
+            <a href="#">Instagram: @annscigliano_</a>
+        </div>
+        <p style="margin-top: 2rem; color: #94a3b8;">© 2023 Annie Scigliano</p>
+    </footer>
+</body>
+</html>
