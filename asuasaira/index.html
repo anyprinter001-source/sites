@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saira Asua | Tecnología con alma</title>
+    <meta name="description" content="Desarrolladora de IA y creadora digital. Diseño soluciones que cuidan nuestro entorno, enseñan a las nuevas generaciones y conectan el código con la sensibilidad humana.">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4A3B73;
+            --accent-color: #FF8C42;
+            --background-color: #FFFBF5;
+            --text-color: #2D2A26;
+            --font-main: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: var(--font-main);
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header { padding: 2rem; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-weight: 800; font-size: 1.5rem; color: var(--primary-color); }
+
+        main { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+
+        .hero { padding: 4rem 0; text-align: center; }
+        .hero h1 { font-size: 3rem; color: var(--primary-color); margin-bottom: 1rem; line-height: 1.2; }
+        .hero p { font-size: 1.25rem; margin-bottom: 2rem; opacity: 0.9; }
+        .cta { background: var(--accent-color); color: white; padding: 1rem 2rem; border-radius: 50px; text-decoration: none; font-weight: 600; transition: transform 0.3s; display: inline-block; }
+
+        section { margin-bottom: 5rem; }
+        h2 { font-size: 2rem; color: var(--primary-color); margin-bottom: 1.5rem; }
+
+        .about-content p { margin-bottom: 1.5rem; }
+
+        .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .project-card { background: white; padding: 2rem; border-radius: 1rem; border-left: 5px solid var(--accent-color); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .project-card h3 { color: var(--primary-color); margin-bottom: 0.5rem; }
+        .project-card .highlight { font-weight: 600; color: var(--accent-color); margin-top: 1rem; display: block; font-size: 0.9rem; }
+
+        footer { text-align: center; padding: 4rem 2rem; border-top: 1px solid #eee; }
+        .social-links a { margin: 0 1rem; color: var(--primary-color); text-decoration: none; font-weight: 600; }
+        .tagline { font-weight: 800; color: var(--accent-color); margin-top: 1rem; display: block; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Saira Asua</div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Tecnología con alma: donde la lógica encuentra el propósito</h1>
+            <p>Desarrolladora de IA y creadora digital. Diseño soluciones que cuidan nuestro entorno, enseñan a las nuevas generaciones y conectan el código con la sensibilidad humana.</p>
+            <a href="#projects" class="cta">Explora mi universo creativo</a>
+        </section>
+
+        <section id="about">
+            <h2>Sobre mí</h2>
+            <div class="about-content">
+                <p>Hola, soy Saira. Mi día a día ocurre en el punto exacto donde la tecnología se vuelve humana. Me dedico al desarrollo de inteligencia artificial y soluciones web, pero mi verdadera motivación es el impacto: transformar líneas de código en herramientas que marquen una diferencia real en el mundo, como SAI, el sistema de alerta temprana de incendios en el que trabajo junto a AlterMundi.</p>
+                <p>Creo firmemente en el poder de la educación y el bienestar. Por eso he dado vida a proyectos como Mantis, donde busco encender la chispa de la programación en los más pequeños, y Harmonic Beacon, un espacio digital diseñado para encontrar calma y equilibrio en medio del ruido constante de la red.</p>
+                <p>Más allá de las pantallas, soy una exploradora de mundos. Me fascina observar el cosmos, modelar piezas en impresión 3D y traducir el simbolismo del tarot a través de mi ilustración digital. Combino esta curiosidad técnica con mi lado más artístico para construir proyectos que no solo funcionan, sino que tienen alma y cuentan una historia.</p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Proyectos Destacados</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>SAI (Sistema de Alerta Temprana)</h3>
+                    <p>Tecnología de vanguardia al servicio de la preservación ambiental.</p>
+                    <span class="highlight">Impacto social directo mediante IA para la prevención de incendios.</span>
+                </div>
+                <div class="project-card">
+                    <h3>Harmonic Beacon</h3>
+                    <p>Un ecosistema digital enfocado en el bienestar personal y la introspección.</p>
+                    <span class="highlight">Diseño centrado en la paz mental y la experiencia de usuario consciente.</span>
+                </div>
+                <div class="project-card">
+                    <h3>Phideus</h3>
+                    <p>Desarrollo web a medida con un enfoque estético y funcional.</p>
+                    <span class="highlight">Presencia digital optimizada con un toque creativo y humano.</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.instagram.com/sai.amapola/">Instagram</a>
+            <a href="https://x.com/sairaasua">X</a>
+            <a href="https://www.linkedin.com/in/saira-asua-0a85b7389/">LinkedIn</a>
+            <a href="https://github.com/SairaAsua">GitHub</a>
+        </div>
+        <span class="tagline">Codificando futuros, dibujando realidades.</span>
+    </footer>
+</body>
+</html>
