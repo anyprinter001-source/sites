@@ -4,131 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saira García | Diseño con propósito</title>
-    <meta name="description" content="Diseñadora y emprendedora digital. Transformo ideas en experiencias humanas, funcionales y estéticamente memorables.">
+    <meta name="description" content="Diseñadora y emprendedora digital. Transformo ideas en experiencias humanas, funcionales y profundamente significativas.">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #FDFBF7;
-            --accent-color: #A0522D;
-            --background-color: #F5F0E6;
-            --text-color: #3D3835;
+            --primary-color: #F5F0EA;
+            --accent-color: #C97055;
+            --bg-color: #FAF7F3;
+            --text-color: #2D2926;
             --font-main: 'Plus Jakarta Sans', sans-serif;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            background-color: var(--background-color);
+        body { 
+            font-family: var(--font-main); 
+            background-color: var(--bg-color); 
             color: var(--text-color);
-            font-family: var(--font-main);
             line-height: 1.6;
             padding: 0 20px;
         }
 
-        header {
-            max-width: 1000px;
-            margin: 40px auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        header { max-width: 1000px; margin: 40px auto; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-weight: 600; font-size: 1.5rem; }
+
+        section { max-width: 800px; margin: 80px auto; }
+        
+        .hero { text-align: center; padding: 60px 0; }
+        h1 { font-size: 3rem; margin-bottom: 20px; line-height: 1.2; }
+        .subheadline { font-size: 1.2rem; color: #555; margin-bottom: 30px; }
+        .cta-btn { 
+            background: var(--accent-color); color: white; padding: 12px 30px; 
+            text-decoration: none; border-radius: 50px; font-weight: 600; 
         }
 
-        .logo { font-weight: 600; font-size: 1.5rem; color: var(--accent-color); }
-
-        main { max-width: 1000px; margin: 0 auto; }
-
-        section { padding: 80px 0; border-bottom: 1px solid rgba(61, 56, 53, 0.1); }
-
-        .hero h1 { font-size: 3.5rem; line-height: 1.1; margin-bottom: 20px; }
-        .hero p { font-size: 1.25rem; max-width: 600px; margin-bottom: 30px; }
-        .btn {
-            display: inline-block;
-            background: var(--accent-color);
-            color: white;
-            padding: 12px 30px;
-            text-decoration: none;
-            border-radius: 4px;
-            font-weight: 600;
+        .about p { margin-bottom: 20px; font-size: 1.1rem; }
+        
+        .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+        .project-card { 
+            background: var(--primary-color); padding: 30px; border-radius: 10px; 
+            border: 1px solid #e8e2dc;
         }
+        .project-card h3 { margin-bottom: 10px; color: var(--accent-color); }
+        .highlight { font-size: 0.9rem; font-style: italic; margin-top: 10px; display: block; }
 
-        .about p { margin-bottom: 20px; max-width: 800px; }
-
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .project-card {
-            background: var(--primary-color);
-            padding: 30px;
-            border-radius: 8px;
-            border: 1px solid rgba(160, 82, 45, 0.1);
-        }
-
-        .project-card h3 { color: var(--accent-color); margin-bottom: 10px; }
-
-        footer { text-align: center; padding: 60px 0; font-size: 0.9rem; }
+        footer { text-align: center; padding: 40px; border-top: 1px solid #ddd; margin-top: 80px; }
         .social-links a { margin: 0 10px; color: var(--text-color); text-decoration: none; }
 
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 2.5rem; }
-        }
+        @media (max-width: 600px) { h1 { font-size: 2rem; } }
     </style>
 </head>
 <body>
 
-<header>
-    <div class="logo">Saira García</div>
-    <nav>
-        <a href="#proyectos" style="text-decoration: none; color: var(--text-color);">Trabajo</a>
-    </nav>
-</header>
+    <header>
+        <div class="logo">Saira García</div>
+    </header>
 
-<main>
-    <section class="hero">
-        <h1>Diseño con propósito para marcas que conectan.</h1>
-        <p>Soy Saira García, diseñadora y emprendedora digital. Transformo ideas en experiencias humanas, funcionales y estéticamente memorables.</p>
-        <a href="#proyectos" class="btn">Explora mi trabajo</a>
-    </section>
+    <main>
+        <section class="hero">
+            <h1>Diseño con propósito para marcas que conectan.</h1>
+            <p class="subheadline">Soy Saira García, diseñadora y emprendedora digital. Transformo ideas en experiencias humanas, funcionales y profundamente significativas.</p>
+            <a href="mailto:hola@sairagarcia.com" class="cta-btn">Hablemos de tu proyecto</a>
+        </section>
 
-    <section class="about">
-        <h2>Sobre mí</h2>
-        <br>
-        <p>Creo que el diseño va mucho más allá de la estética; es el puente que une a las personas con lo que realmente les importa. Mi trabajo vive en la intersección entre el diseño UX, el branding estratégico y la construcción de comunidades digitales con alma.</p>
-        <p>Cada proyecto que emprendo nace de la curiosidad y la intención. Me dedico a transformar conceptos complejos en productos digitales coherentes, donde la funcionalidad se encuentra con una visión creativa, buscando siempre un impacto real y duradero en sus audiencias.</p>
-    </section>
+        <section class="about">
+            <h2>Sobre mí</h2>
+            <br>
+            <p>Creo en un diseño que no solo se ve bien, sino que se siente bien. Mi trabajo nace en la intersección de la estrategia UX y un branding consciente, donde cada píxel tiene la intención de acercar a las personas a lo que realmente les importa.</p>
+            <p>A lo largo de mi trayectoria, he aprendido que los productos digitales más exitosos son aquellos que logran humanizar la tecnología. Me especializo en construir soluciones que equilibran la funcionalidad técnica con una narrativa visual clara, cálida y editorial.</p>
+        </section>
 
-    <section id="proyectos">
-        <h2>Proyectos seleccionados</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <h3>JournalBord</h3>
-                <p><strong>Plataforma de marca personal vía Telegram</strong></p>
-                <p style="font-size: 0.9rem; margin-top: 10px;"><em>Elevando la comunicación directa y el branding personal a través de la mensajería instantánea.</em></p>
+        <section class="projects">
+            <h2>Proyectos</h2>
+            <br>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>JournalBord</h3>
+                    <p>Plataforma innovadora de marca personal entregada directamente vía Telegram.</p>
+                    <span class="highlight">Reimaginando la presencia digital en tiempo real.</span>
+                </div>
+                <div class="project-card">
+                    <h3>Amapola Studio</h3>
+                    <p>Estudio de diseño digital independiente enfocado en marcas con alma.</p>
+                    <span class="highlight">Artesanía digital con un enfoque estético y estratégico.</span>
+                </div>
+                <div class="project-card">
+                    <h3>Comunidad Creativa</h3>
+                    <p>Newsletter semanal que explora la intersección entre la creatividad y la tecnología.</p>
+                    <span class="highlight">Curaduría pensada para mentes inquietas.</span>
+                </div>
             </div>
-            <div class="project-card">
-                <h3>Amapola Studio</h3>
-                <p><strong>Estudio de diseño digital independiente</strong></p>
-                <p style="font-size: 0.9rem; margin-top: 10px;"><em>Un espacio de co-creación donde damos forma a identidades visuales con esencia editorial y moderna.</em></p>
-            </div>
-            <div class="project-card">
-                <h3>Comunidad Creativa</h3>
-                <p><strong>Newsletter semanal sobre creatividad y tecnología</strong></p>
-                <p style="font-size: 0.9rem; margin-top: 10px;"><em>Curaduría constante para mentes inquietas que buscan el equilibrio entre el código y la inspiración.</em></p>
-            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Diseño con alma para el entorno digital.</p>
+        <div class="social-links" style="margin-top: 20px;">
+            <a href="https://linkedin.com/in/sairagarcia">LinkedIn</a>
+            <a href="https://instagram.com/sairagarcia">Instagram</a>
+            <a href="https://twitter.com/sairagarcia">Twitter</a>
         </div>
-    </section>
-</main>
-
-<footer>
-    <p>Diseño humano para una era digital. Creado con propósito y color tierra.</p>
-    <div class="social-links" style="margin-top: 20px;">
-        <a href="https://linkedin.com/in/sairagarcia">LinkedIn</a>
-        <a href="https://instagram.com/sairagarcia">Instagram</a>
-        <a href="https://twitter.com/sairagarcia">Twitter</a>
-    </div>
-</footer>
+    </footer>
 
 </body>
 </html>
